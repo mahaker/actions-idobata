@@ -1,0 +1,35 @@
+{
+  "name": "actions-idobata",
+  "version": "0.0.1",
+  "private": true,
+  "description": "post message to idobata",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "rm -rf lib/ dist/ && tsc && ncc build lib/main.js",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mahaker/actions-idobata.git"
+  },
+  "keywords": [
+    "github-actions",
+    "node",
+    "setup",
+    "idobata"
+  ],
+  "author": "mahaker",
+  "license": "MIT",
+  "dependencies": {
+    "@actions/core": "^1.2.0"
+  },
+  "devDependencies": {
+    "@types/jest": "^24.0.13",
+    "@types/node": "^12.0.4",
+    "@zeit/ncc": "^0.20.5",
+    "jest": "^24.8.0",
+    "jest-circus": "^24.7.1",
+    "ts-jest": "^24.0.2",
+    "typescript": "^3.5.1"
+  }
+}

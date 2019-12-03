@@ -1,0 +1,13 @@
+name: 'actions-idobata'
+description: 'post message to idobata'
+author: 'mahaker'
+inputs:
+  hookUrl:
+    description: 'idobata hook url'
+    required: true
+  message:
+    description: 'idobata message'
+    required: true
+runs:
+  using: 'node12'
+  main: 'dist/index.js'
