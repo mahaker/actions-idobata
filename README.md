@@ -23,11 +23,15 @@ You can contains context and expression syntax.
 ### format
 
 Message format.
-You can choose from 'markdown' and 'html'.(default 'markdown')
+You can choose between 'markdown' or 'html'. (default 'markdown')
 
 ```yml
 uses: mahaker/actions-idobata@v1
 with:
   hookUrl: ${{ secrets.IdobataHookUrl }}
-  message: 'hello GitHub Actions!!'
+  message: |
+    ### hello GitHub Actions!!
+    pushed to ${{ github.repository }}
+    by @${{ github.actor }}
+  format: 'markdown'
 ```
