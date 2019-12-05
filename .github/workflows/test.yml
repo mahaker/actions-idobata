@@ -34,4 +34,3 @@ jobs:
           ### hello GitHub Actions!!
           pushed to ${{ github.repository }}
           by @${{ github.actor }}
-        format: 'markdown'
