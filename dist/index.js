@@ -88,17 +88,16 @@ function run() {
     return __awaiter(this, void 0, void 0, function* () {
         try {
             const msg = querystring_1.default.stringify({
+                format: core.getInput('format'),
                 source: core.getInput('message')
             });
             const req = https_1.default.request(core.getInput('hookUrl'), {
                 method: 'POST',
                 headers: {
-                    "User-Agent": "post-idobata-ts",
-                    "Content-Length": msg.length
+                    'User-Agent': 'post-idobata-ts',
+                    'Content-Length': msg.length
                 }
             });
-            req.on('response', (res) => console.log(res.statusCode));
-            req.on('error', (e) => console.log(e));
             req.write(msg);
             req.end();
         }
