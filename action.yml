@@ -8,6 +8,9 @@ inputs:
   message:
     description: 'idobata message'
     required: true
+  format:
+    description: 'message format. [ markdown or html ]'
+    default: 'markdown'
 runs:
   using: 'node12'
   main: 'dist/index.js'
