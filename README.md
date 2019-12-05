@@ -5,7 +5,7 @@ This action post message to idobata as webhook.
 ## Usage
 
 ```yml
-uses: mahaker/actions-idobata@v1.1.0
+uses: mahaker/actions-idobata@v1.1.1
 with:
   hookUrl: ${{ secrets.IdobataHookUrl }}
   message: | # multiple lines
