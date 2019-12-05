@@ -7,6 +7,7 @@ async function run() {
   try {
 
     const msg: string = qs.stringify({
+      format: core.getInput('format'),
       source: core.getInput('message')
     });
 

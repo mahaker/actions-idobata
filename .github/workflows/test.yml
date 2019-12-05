@@ -30,4 +30,7 @@ jobs:
     - uses: ./
       with:
         hookUrl: ${{ secrets.IdobataHookUrl }}
-        message: 'hello GitHub Actions!!'
+        message: |
+          ### hello GitHub Actions!!
+          pushed to ${{ github.repository }}
+          by @${{ github.actor }}
