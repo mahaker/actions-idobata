@@ -21,7 +21,7 @@
   "author": "mahaker",
   "license": "MIT",
   "dependencies": {
-    "@actions/core": "^1.2.0"
+    "@actions/core": "^1.2.6"
   },
   "devDependencies": {
     "@types/jest": "^24.0.13",
