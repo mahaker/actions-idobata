@@ -18,7 +18,7 @@ async function run() {
         headers: {
           'User-Agent': 'post-idobata-ts',
           'Content-Length': msg.length
-    		}
+        }
       }
     );
     

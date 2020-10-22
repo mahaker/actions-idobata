@@ -6,6 +6,7 @@
   "main": "dist/index.js",
   "scripts": {
     "build": "rm -rf lib/ dist/ && tsc && ncc build lib/main.js",
+    "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
     "test": "jest"
   },
   "repository": {
@@ -26,7 +27,10 @@
   "devDependencies": {
     "@types/jest": "^24.0.13",
     "@types/node": "^12.0.4",
+    "@typescript-eslint/eslint-plugin": "^4.5.0",
+    "@typescript-eslint/parser": "^4.5.0",
     "@zeit/ncc": "^0.20.5",
+    "eslint": "^7.11.0",
     "jest": "^24.8.0",
     "jest-circus": "^24.7.1",
     "ts-jest": "^24.0.2",
