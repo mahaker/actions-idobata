@@ -1,6 +1,6 @@
 {
   "name": "actions-idobata",
-  "version": "0.0.1",
+  "version": "1.1.2",
   "private": true,
   "description": "post message to idobata",
   "main": "dist/index.js",
